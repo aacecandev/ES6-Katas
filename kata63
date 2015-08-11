@@ -56,8 +56,8 @@ describe('`string.includes()` finds string within another string', function() {
         assert.equal(actual, true);
       });
       it('e.g. from an object, with a `toString()` method', function() {
-        const objWithToString = {toString: 123};
-        assert.equal('123'.includes(objWithToString, true));
+        const objWithToString = {toString: ()=>'1'};
+        assert.equal('123'.includes(objWithToString), true);
       });
     });
   });
