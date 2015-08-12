@@ -1,6 +1,5 @@
 // 55: Number - isInteger
 // To do: make all tests pass, leave the assert lines unchanged!
-
 describe('`Number.isInteger()` determines if a value is an integer', function(){
   
   const isTrue = (what) => assert.equal(what, true);
